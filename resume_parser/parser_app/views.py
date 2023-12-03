@@ -22,6 +22,7 @@ def homepage(request):
                     
                     # extracting resume entities
                     parser = ResumeParser(os.path.join(settings.MEDIA_ROOT, resume.resume.name))
+                    
                     data = parser.get_extracted_data()
                     resumes_data.append(data)
                     resume.name               = data.get('name')
