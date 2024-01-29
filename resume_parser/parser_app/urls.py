@@ -19,5 +19,5 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.homepage, name='homepage'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('upload_resume/', views.upload_resume, name='upload_resume'),
+]
